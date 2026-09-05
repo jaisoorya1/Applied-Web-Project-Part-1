@@ -1,0 +1,185 @@
+/* =========================================
+   Global Variables & Reset
+========================================= */
+:root {
+    --bg-color: #050505;
+    --text-color: #e0e0e0;
+    --accent-color: #00ffcc; /* Bold Digital Cyan */
+    --secondary-bg: #111111;
+    --border-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+/* =========================================
+   Typography & Headings
+========================================= */
+h1, h2, h3 {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   Header & Navigation
+========================================= */
+header {
+    background-color: var(--secondary-bg);
+    padding: 25px 20px;
+    text-align: center;
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.logo-icon {
+    font-size: 2.5rem;
+}
+
+.slogan {
+    font-style: italic;
+    color: #888;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 8px 16px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+nav a:hover, nav a.active {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+}
+
+/* =========================================
+   Main Content & Background Graphic
+========================================= */
+/* REQUIREMENT: index.html background graphic implemented using CSS */
+.index-bg {
+
+    background: linear-gradient(rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.9)),
+                repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 204, 0.05) 2px, rgba(0, 255, 204, 0.05) 4px);
+    padding: 40px 20px;
+    min-height: 60vh;
+}
+
+section {
+    max-width: 900px;
+    margin: 0 auto 40px auto;
+    background-color: rgba(17, 17, 17, 0.85);
+    padding: 30px;
+    border-radius: 8px;
+    border-left: 3px solid var(--border-color);
+}
+
+/* =========================================
+   Table Styling
+========================================= */
+.cyber-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #0a0a0a;
+}
+
+.cyber-table caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.cyber-table th, .cyber-table td {
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    text-align: left;
+}
+
+.cyber-table th {
+    background-color: #1a1a1a;
+    color: var(--accent-color);
+}
+
+.table-footer {
+    text-align: center;
+    font-style: italic;
+    color: #aaa;
+    background-color: #111;
+}
+
+/* =========================================
+   Footer
+========================================= */
+footer {
+    background-color: var(--secondary-bg);
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-links ul {
+    list-style: none;
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   Responsive Design
+========================================= */
+@media screen and (max-width: 600px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Allows the table to scroll sideways on small screens rather than breaking */
+    .services {
+        overflow-x: auto; 
+    }
+}
