@@ -35,53 +35,51 @@ h1, h2, h3 {
 /* =========================================
    Header & Navigation
 ========================================= */
-header {
-    background-color: var(--secondary-bg);
-    padding: 25px 20px;
-    text-align: center;
-    border-bottom: 2px solid var(--accent-color);
-}
 
-.logo-container {
+.main-header {
+    background-color: #111111;
+    padding: 20px 40px;
+    border-bottom: 2px solid #00ffcc;
+    /* This forces the logo to the left and nav to the right */
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 15px;
-    margin-bottom: 5px;
 }
 
-.logo-icon {
-    font-size: 2.5rem;
+.logo-area h1 {
+    color: #00ffcc;
+    margin-bottom: 0;
+    font-size: 1.8rem;
 }
 
-.slogan {
-    font-style: italic;
+.logo-area .slogan {
     color: #888;
-    margin-bottom: 20px;
-    font-size: 0.95rem;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 5px;
 }
 
-nav ul {
+.nav-area ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+    margin: 0;
+    padding: 0;
 }
 
-nav a {
+.nav-area li {
+    display: inline-block; /* Keeps links in a straight line */
+    margin-left: 20px;
+}
+
+.nav-area a {
     text-decoration: none;
-    color: var(--text-color);
-    padding: 8px 16px;
-    border: 1px solid transparent;
-    transition: all 0.3s ease;
-    border-radius: 4px;
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    padding: 5px;
 }
 
-nav a:hover, nav a.active {
-    border: 1px solid var(--accent-color);
-    color: var(--accent-color);
-    box-shadow: 0 0 10px rgba(0, 255, 204, 0.2);
+/* The Fixed Hover Effect: Only changes color when the mouse is actually on it */
+.nav-area a:hover {
+    color: #00ffcc;
 }
 
 /* =========================================
@@ -96,7 +94,7 @@ nav a:hover, nav a.active {
     min-height: 60vh;
 }
 
-section {
+.content-box {
     max-width: 900px;
     margin: 0 auto 40px auto;
     background-color: rgba(17, 17, 17, 0.85);
