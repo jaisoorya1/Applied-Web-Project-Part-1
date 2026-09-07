@@ -181,3 +181,123 @@ footer {
         overflow-x: auto; 
     }
 }
+
+//abouthtml
+
+
+//Nested Group List
+.nested-group-list {
+    margin-left: 20px;
+    margin-bottom: 25px;
+    color: #cccccc;
+}
+
+.nested-group-list ul {
+    list-style-type: square;
+    margin-left: 25px;
+    margin-top: 6px;
+}
+
+.nested-group-list li {
+    margin-bottom: 4px;
+}
+
+/* REQUIREMENT: Group Figure and Figcaption Styling */
+.team-figure {
+    background-color: #0d0d0d;
+    border: 1px solid #262626;
+    border-radius: 6px;
+    padding: 12px;
+    text-align: center;
+}
+
+.team-figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+}
+
+figcaption {
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #999999;
+    font-style: italic;
+}
+
+/* Definition List for Member Contributions */
+.contribution-list dt {
+    font-size: 1.15rem;
+    color: #00ffcc;
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contribution-list dd {
+    margin-left: 0;
+    margin-top: 6px;
+    color: #cccccc;
+    line-height: 1.5;
+}
+
+/* REQUIREMENT: Style Student IDs using Hexadecimal Colour Values */
+.student-id {
+    color: #ffaa00;
+    font-family: 'Consolas', 'Courier New', monospace;
+    font-size: 0.95rem;
+    letter-spacing: 1px;
+}
+
+/* REQUIREMENT: Team Table Styling and Hover Effects */
+.table-container {
+    overflow-x: auto;
+    margin-top: 15px;
+}
+
+.team-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #0a0a0a;
+    border: 1px solid #333333;
+}
+
+.team-table caption {
+    caption-side: top;
+    text-align: left;
+    font-size: 0.9rem;
+    color: #888888;
+    padding-bottom: 8px;
+}
+
+.team-table th, 
+.team-table td {
+    padding: 14px 16px;
+    border: 1px solid #222222;
+    text-align: left;
+}
+
+.team-table th {
+    background-color: #141414;
+    color: #00ffcc;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+}
+
+/* REQUIREMENT: Appropriate hover effect using Hex Values */
+.team-table tbody tr {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.team-table tbody tr:hover {
+    background-color: #1a1a1a;
+}
+
+.team-table tbody tr:hover td {
+    color: #ffffff;
+}
