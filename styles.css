@@ -33,17 +33,16 @@ h1, h2, h3 {
 }
 
 /* =========================================
-   Header & Navigation
+   Header & Navigation (FIXED)
 ========================================= */
-
 .main-header {
     background-color: #111111;
     padding: 20px 40px;
     border-bottom: 2px solid #00ffcc;
-    /* This forces the logo to the left and nav to the right */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap; /* Helps items wrap neatly on smaller screens */
 }
 
 .logo-area h1 {
@@ -63,11 +62,8 @@ h1, h2, h3 {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.nav-area li {
-    display: inline-block; /* Keeps links in a straight line */
-    margin-left: 20px;
+    display: flex; 
+    gap: 20px;    
 }
 
 .nav-area a {
@@ -75,9 +71,10 @@ h1, h2, h3 {
     color: #e0e0e0;
     font-size: 1.1rem;
     padding: 5px;
+    transition: color 0.3s ease; /* Smooth hover transition */
 }
 
-/* The Fixed Hover Effect: Only changes color when the mouse is actually on it */
+/* The Fixed Hover Effect */
 .nav-area a:hover {
     color: #00ffcc;
 }
@@ -85,9 +82,7 @@ h1, h2, h3 {
 /* =========================================
    Main Content & Background Graphic
 ========================================= */
-/* REQUIREMENT: index.html background graphic implemented using CSS */
 .index-bg {
-
     background: linear-gradient(rgba(5, 5, 5, 0.9), rgba(5, 5, 5, 0.9)),
                 repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 255, 204, 0.05) 2px, rgba(0, 255, 204, 0.05) 4px);
     padding: 40px 20px;
@@ -101,6 +96,27 @@ h1, h2, h3 {
     padding: 30px;
     border-radius: 8px;
     border-left: 3px solid var(--border-color);
+}
+
+/* =========================================
+   Image Styling (ADDED)
+========================================= */
+.intro-image-container {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.cyber-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: 1px solid #333333;
+    opacity: 0.85;
+    transition: opacity 0.3s ease;
+}
+
+.cyber-image:hover {
+    opacity: 1;
 }
 
 /* =========================================
@@ -168,24 +184,39 @@ footer {
 }
 
 /* =========================================
-   Responsive Design
+   Responsive Design 
 ========================================= */
-@media screen and (max-width: 600px) {
-    nav ul {
+@media screen and (max-width: 768px) {
+    /* Stacks the logo and nav neatly on mobile */
+    .main-header {
         flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .nav-area ul {
+        flex-direction: column;
+        align-items: center;
         gap: 10px;
     }
     
-    /* Allows the table to scroll sideways on small screens rather than breaking */
     .services {
         overflow-x: auto; 
     }
 }
 
+<<<<<<< HEAD
 //abouthtml
 
 
 //Nested Group List
+=======
+/* =========================================
+   About.html Specific Styling
+========================================= */
+
+/* Nested Group List */
+>>>>>>> 87f06fa1d1cdf9b962f3bfb9ef0be9fecc8038d2
 .nested-group-list {
     margin-left: 20px;
     margin-bottom: 25px;
@@ -202,7 +233,11 @@ footer {
     margin-bottom: 4px;
 }
 
+<<<<<<< HEAD
 /* REQUIREMENT: Group Figure and Figcaption Styling */
+=======
+/* Group Figure and Figcaption Styling */
+>>>>>>> 87f06fa1d1cdf9b962f3bfb9ef0be9fecc8038d2
 .team-figure {
     background-color: #0d0d0d;
     border: 1px solid #262626;
@@ -244,7 +279,11 @@ figcaption {
     line-height: 1.5;
 }
 
+<<<<<<< HEAD
 /* REQUIREMENT: Style Student IDs using Hexadecimal Colour Values */
+=======
+/* Student IDs */
+>>>>>>> 87f06fa1d1cdf9b962f3bfb9ef0be9fecc8038d2
 .student-id {
     color: #ffaa00;
     font-family: 'Consolas', 'Courier New', monospace;
@@ -252,7 +291,11 @@ figcaption {
     letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
 /* REQUIREMENT: Team Table Styling and Hover Effects */
+=======
+/* Team Table Styling */
+>>>>>>> 87f06fa1d1cdf9b962f3bfb9ef0be9fecc8038d2
 .table-container {
     overflow-x: auto;
     margin-top: 15px;
@@ -289,7 +332,11 @@ figcaption {
     letter-spacing: 1px;
 }
 
+<<<<<<< HEAD
 /* REQUIREMENT: Appropriate hover effect using Hex Values */
+=======
+/* Table Hover Effect */
+>>>>>>> 87f06fa1d1cdf9b962f3bfb9ef0be9fecc8038d2
 .team-table tbody tr {
     transition: background-color 0.2s ease-in-out;
 }
