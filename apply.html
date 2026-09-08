@@ -51,20 +51,20 @@
   
     <fieldset>
         <legend>Personal Details</legend>
-        <p><label for="fullName">Full Name:</label>
+        <p><label for="fullName">Full Name *</label>
             <input type="text" id="fullName" name="fullName" required>
         </p>
-        <p><label for="email">Email Address:</label>
+        <p><label for="email">Email Address *</label>
             <input type="email" id="email" name="email" required>
         </p>
-        <p><label for="phone">Phone Number:</label>
+        <p><label for="phone">Phone Number *</label>
             <input type="tel" id="phone" name="phone" required>
         </p>
     </fieldset>
 
     <fieldset>
         <legend>Position Details</legend>
-        <div class="form-row">
+        
         <label for="positions">Positions Applying for *</label>
         <select id="positions" name="positions" required>
             <option value="">-- Select a position --</option>
@@ -74,15 +74,33 @@
             <option value="cyber-security-engineer">Cyber Security Engineer</option>
             <option value="penetration-tester">Penetration Tester</option>
         </select>
-        </div>
+       
+        <label for="start-date">Earliest Start Date *</label>
+        <input type="date" id="start-date" name="start-date" required>
 
-        <p><label for="position">Position Applying For:</label>
-            <input type="text" id="position" name="position" required>
-        </p>
-        <p><label for="resume">Upload Resume:</label>
-            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-        </p>
+    <fieldset class="sub-fieldset">
+        <legend>Experience Level*</legend>
+        <label><input type="radio" name="experience" value="entry" required> Entry Level (0-1 years)</label>
+        <label><input type="radio" name="experience" value="mid" required> Mid Level (2-5 years)</label>
+        <label><input type="radio" name="experience" value="senior" required> Senior Level (5+ years)</label>
     </fieldset>
+    </fieldset>
+
+    <fieldset>
+        <legend>Documents & Details</legend>
+        
+        <label for="resume">Upload resume/CV *</label>
+        <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+        <label for="linkedin">LinkedIn or portfolio URL</label>
+        <input type="url" id="linkedin" name="linkedin" placeholder="https://">
+  
+        <label for="cover-letter">Cover letter / why you want to join</label>
+        <textarea id="cover-letter" name="cover-letter" rows="6"></textarea>
+ 
+    </fieldset>
+
+    
         
 
 
