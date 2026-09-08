@@ -374,3 +374,54 @@ textarea:focus {
   outline: none;
   border-color: var(--accent-color);
 }
+
+.checkbox-row label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--accent-color);
+  margin-top: 3px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.btn-primary {
+  padding: 14px 32px;
+  background-color: var(--text-color);
+  color: #050505;
+  border: 1px solid var(--text-color);
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.btn-secondary {
+  padding: 14px 32px;
+  background-color: #ccc;
+  color: #050505;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background-color: #aaa;
+  border-color: #aaa;
+}
