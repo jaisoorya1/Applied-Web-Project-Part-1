@@ -28,26 +28,61 @@
         </nav>
     </header>
 
-    <yap class="filler-info">
+    <section class="page-intro">
         <h2>Apply to Black Vault Cyber</h2>
         <p>Complete the form below to submit your application. Fields marked with an asterisk (*) are required. Our team reviews every application and will contact you within two weeks.</p>
+    </section>
 
-        <div class="value-props">
-            <div class="value-card">
-                <h3>Real Impact</h3>
-                <p>Protect client infrastructure and data from live, evolving threats.</p>
-            </div>
-            <div class="value-card">
-                <h3>Growth Focused</h3>
-                <p>Ongoing training, certifications and mentorship as you advance.</p>
-            </div>
-            <div class="value-card">
-                <h3>Trusted Team</h3>
-                <p>Work alongside experienced analysts in a security-first culture.</p>
-            </div>
+    <div class="box-row">
+        <div class="box">
+            <h2>Real Impact</h2>
+            <p>Make a tangible difference in protecting our clients' digital assets.</p>
         </div>
-    </yap>
+        <div class="box">
+            <h2>Growth Focused</h2>
+            <p>We invest in your professional development with training and mentorship.</p>
+        </div>
+        <div class="box">
+            <h2>Trusted Team</h2>
+            <p>Join a team of experienced analysts in a security-first culture.</p> 
+        </div>     
+    </div>
     
+  
+    <fieldset>
+        <legend>Personal Details</legend>
+        <p><label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </p>
+        <p><label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p><label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </p>
+    </fieldset>
+
+    <fieldset>
+        <legend>Position Details</legend>
+        <div class="form-row">
+        <label for="positions">Positions Applying for *</label>
+        <select id="positions" name="positions" required>
+            <option value="">-- Select a position --</option>
+            <option value="SOC-analyst">SOC Analyst</option>
+            <option value="incident-responder">Incident Response Engineer</option>
+            <option value="security-engineer">Security Engineer</option>
+            <option value="cyber-security-engineer">Cyber Security Engineer</option>
+            <option value="penetration-tester">Penetration Tester</option>
+        </select>
+        </div>
+
+        <p><label for="position">Position Applying For:</label>
+            <input type="text" id="position" name="position" required>
+        </p>
+        <p><label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+        </p>
+    </fieldset>
         
 
 
