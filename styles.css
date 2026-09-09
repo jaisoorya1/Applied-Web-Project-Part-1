@@ -429,3 +429,7 @@ input[type="checkbox"] {
   background-color: #aaa;
   border-color: #aaa;
 }
+
+.page-wrap {
+  padding: 0 20px;
+}
