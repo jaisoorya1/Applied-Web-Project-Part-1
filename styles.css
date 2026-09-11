@@ -332,7 +332,6 @@ SIMRAN (apply.html) custom styles
 ========================================= */
 .page-intro p {
   color: #aaa;
-  max-width: 65ch;
   margin-bottom: 20px;
 }
 
@@ -569,3 +568,7 @@ input[type="checkbox"] {
   background-color: #aaa;
   border-color: #aaa;
 }
+
+.page-wrap {
+  padding: 50px 200px;
+} 
